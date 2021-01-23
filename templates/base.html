@@ -1,0 +1,22 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Django Blog</title>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header>
+            <h1><a href="{% url 'home' %}">Django Blog</a></h1>
+
+        </header>
+
+        <div>
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </body>
+</html>
