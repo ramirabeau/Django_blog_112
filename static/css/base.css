@@ -1,5 +1,6 @@
 header {
     border-bottom: 1px solid ;
+    display: grid;
 }
 
 header h1 a{
